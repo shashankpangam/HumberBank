@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{235A0A34-1FDD-4B9F-9BBC-9FC3A770C3AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HumberBankApplication_Group9</RootNamespace>
+    <AssemblyName>HumberBankApplication_Group9</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountHolder.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="Employees\Inquiry\AccountInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Inquiry\AccountInfo.Designer.cs">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Inquiry\FindTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Inquiry\FindTransaction.Designer.cs">
+      <DependentUpon>FindTransaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Inquiry\FindTransactionResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Inquiry\FindTransactionResult.Designer.cs">
+      <DependentUpon>FindTransactionResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Inquiry\GetStatements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Inquiry\GetStatements.Designer.cs">
+      <DependentUpon>GetStatements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Inquiry\TransactionInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Inquiry\TransactionInfo.Designer.cs">
+      <DependentUpon>TransactionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Request\InfoAlerts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Request\InfoAlerts.Designer.cs">
+      <DependentUpon>InfoAlerts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Request\NewCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Request\NewCard.Designer.cs">
+      <DependentUpon>NewCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Request\PeriodicStatements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Request\PeriodicStatements.Designer.cs">
+      <DependentUpon>PeriodicStatements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Transaction\Deposit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Transaction\Deposit.Designer.cs">
+      <DependentUpon>Deposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Accounts\OpenAccount2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Accounts\OpenAccount2.Designer.cs">
+      <DependentUpon>OpenAccount2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Accounts\OpenAccount3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Accounts\OpenAccount3.Designer.cs">
+      <DependentUpon>OpenAccount3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Transaction\Withdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Transaction\Withdraw.Designer.cs">
+      <DependentUpon>Withdraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Transfer\InterAccountTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Transfer\InterAccountTransfer.Designer.cs">
+      <DependentUpon>InterAccountTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Transfer\InteracEMailTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Transfer\InteracEMailTransfer.Designer.cs">
+      <DependentUpon>InteracEMailTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Transfer\InterBankTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Transfer\InterBankTransfer.Designer.cs">
+      <DependentUpon>InterBankTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Transfer\WesternUnion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Transfer\WesternUnion.Designer.cs">
+      <DependentUpon>WesternUnion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Transfer\WesterUnionPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Transfer\WesterUnionPay.Designer.cs">
+      <DependentUpon>WesterUnionPay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\BranchManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager\BranchManager.Designer.cs">
+      <DependentUpon>BranchManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Accounts\CloseAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Accounts\CloseAccount.Designer.cs">
+      <DependentUpon>CloseAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\MainBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\MainBank.Designer.cs">
+      <DependentUpon>MainBank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs" />
+    <Compile Include="WelcomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeScreen.Designer.cs">
+      <DependentUpon>WelcomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees\Accounts\OpenAccount1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees\Accounts\OpenAccount1.Designer.cs">
+      <DependentUpon>OpenAccount1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Employees\Inquiry\AccountInfo.resx">
+      <DependentUpon>AccountInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Inquiry\FindTransaction.resx">
+      <DependentUpon>FindTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Inquiry\FindTransactionResult.resx">
+      <DependentUpon>FindTransactionResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Inquiry\GetStatements.resx">
+      <DependentUpon>GetStatements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Inquiry\TransactionInfo.resx">
+      <DependentUpon>TransactionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Request\InfoAlerts.resx">
+      <DependentUpon>InfoAlerts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Request\NewCard.resx">
+      <DependentUpon>NewCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Request\PeriodicStatements.resx">
+      <DependentUpon>PeriodicStatements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Transaction\Deposit.resx">
+      <DependentUpon>Deposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Accounts\OpenAccount2.resx">
+      <DependentUpon>OpenAccount2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Accounts\OpenAccount3.resx">
+      <DependentUpon>OpenAccount3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Transaction\Withdraw.resx">
+      <DependentUpon>Withdraw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Transfer\InterAccountTransfer.resx">
+      <DependentUpon>InterAccountTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Transfer\InteracEMailTransfer.resx">
+      <DependentUpon>InteracEMailTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Transfer\InterBankTransfer.resx">
+      <DependentUpon>InterBankTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Transfer\WesternUnion.resx">
+      <DependentUpon>WesternUnion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Transfer\WesterUnionPay.resx">
+      <DependentUpon>WesterUnionPay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager\BranchManager.resx">
+      <DependentUpon>BranchManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Accounts\CloseAccount.resx">
+      <DependentUpon>CloseAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\MainBank.resx">
+      <DependentUpon>MainBank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeScreen.resx">
+      <DependentUpon>WelcomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees\Accounts\OpenAccount1.resx">
+      <DependentUpon>OpenAccount1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\humber_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\humber_logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gulphhumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hsf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\humber_horse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\masteradmin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\can_dollar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interac-email-transfer-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\western_union.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CLOSED_056926__stamps__20.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\net.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
