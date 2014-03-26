@@ -100,7 +100,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(120, 55);
+            this.label1.Location = new System.Drawing.Point(134, 55);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(75, 20);
             this.label1.TabIndex = 11;
@@ -108,6 +108,7 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogout.Location = new System.Drawing.Point(294, 196);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(84, 33);
@@ -130,7 +131,7 @@
             // lblMemberType
             // 
             this.lblMemberType.AutoSize = true;
-            this.lblMemberType.Location = new System.Drawing.Point(51, 157);
+            this.lblMemberType.Location = new System.Drawing.Point(65, 157);
             this.lblMemberType.Name = "lblMemberType";
             this.lblMemberType.Size = new System.Drawing.Size(144, 20);
             this.lblMemberType.TabIndex = 8;
@@ -164,7 +165,7 @@
             // lblUName
             // 
             this.lblUName.AutoSize = true;
-            this.lblUName.Location = new System.Drawing.Point(79, 88);
+            this.lblUName.Location = new System.Drawing.Point(93, 88);
             this.lblUName.Name = "lblUName";
             this.lblUName.Size = new System.Drawing.Size(116, 20);
             this.lblUName.TabIndex = 3;
@@ -173,7 +174,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(86, 124);
+            this.lblPassword.Location = new System.Drawing.Point(100, 124);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(109, 20);
             this.lblPassword.TabIndex = 4;

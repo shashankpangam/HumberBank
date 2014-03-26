@@ -32,9 +32,6 @@
             this.accountManipulationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.transactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.depositToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.withdrawToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inquiryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountInformationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.findTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,8 +41,10 @@
             this.infoAlertsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newCardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.periodicStatementToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.depositToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.withdrawToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transfersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.interAccountTransfersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.interactEMailTransferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.interAccountTransferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.westernUnionMoneyTransferToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -81,39 +80,18 @@
             // openAccountToolStripMenuItem
             // 
             this.openAccountToolStripMenuItem.Name = "openAccountToolStripMenuItem";
-            this.openAccountToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.openAccountToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openAccountToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.openAccountToolStripMenuItem.Text = "Open Account";
             this.openAccountToolStripMenuItem.Click += new System.EventHandler(this.openAccountToolStripMenuItem_Click);
             // 
             // closeAccountToolStripMenuItem
             // 
             this.closeAccountToolStripMenuItem.Name = "closeAccountToolStripMenuItem";
-            this.closeAccountToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.closeAccountToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.closeAccountToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.closeAccountToolStripMenuItem.Text = "Close Account";
             this.closeAccountToolStripMenuItem.Click += new System.EventHandler(this.closeAccountToolStripMenuItem_Click);
-            // 
-            // transactionToolStripMenuItem
-            // 
-            this.transactionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.depositToolStripMenuItem,
-            this.withdrawToolStripMenuItem});
-            this.transactionToolStripMenuItem.Name = "transactionToolStripMenuItem";
-            this.transactionToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
-            this.transactionToolStripMenuItem.Text = "Transaction";
-            // 
-            // depositToolStripMenuItem
-            // 
-            this.depositToolStripMenuItem.Name = "depositToolStripMenuItem";
-            this.depositToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
-            this.depositToolStripMenuItem.Text = "Deposit";
-            this.depositToolStripMenuItem.Click += new System.EventHandler(this.depositToolStripMenuItem_Click);
-            // 
-            // withdrawToolStripMenuItem
-            // 
-            this.withdrawToolStripMenuItem.Name = "withdrawToolStripMenuItem";
-            this.withdrawToolStripMenuItem.Size = new System.Drawing.Size(156, 24);
-            this.withdrawToolStripMenuItem.Text = "Withdraw";
-            this.withdrawToolStripMenuItem.Click += new System.EventHandler(this.withdrawToolStripMenuItem_Click);
             // 
             // inquiryToolStripMenuItem
             // 
@@ -129,28 +107,34 @@
             // accountInformationToolStripMenuItem
             // 
             this.accountInformationToolStripMenuItem.Name = "accountInformationToolStripMenuItem";
-            this.accountInformationToolStripMenuItem.Size = new System.Drawing.Size(275, 24);
+            this.accountInformationToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
+            this.accountInformationToolStripMenuItem.Size = new System.Drawing.Size(387, 24);
             this.accountInformationToolStripMenuItem.Text = "Account Information";
             this.accountInformationToolStripMenuItem.Click += new System.EventHandler(this.accountInformationToolStripMenuItem_Click);
             // 
             // findTransactionToolStripMenuItem
             // 
             this.findTransactionToolStripMenuItem.Name = "findTransactionToolStripMenuItem";
-            this.findTransactionToolStripMenuItem.Size = new System.Drawing.Size(275, 24);
+            this.findTransactionToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
+            this.findTransactionToolStripMenuItem.Size = new System.Drawing.Size(387, 24);
             this.findTransactionToolStripMenuItem.Text = "Find Transaction";
             this.findTransactionToolStripMenuItem.Click += new System.EventHandler(this.findTransactionToolStripMenuItem_Click);
             // 
             // getStatementsToolStripMenuItem
             // 
             this.getStatementsToolStripMenuItem.Name = "getStatementsToolStripMenuItem";
-            this.getStatementsToolStripMenuItem.Size = new System.Drawing.Size(275, 24);
+            this.getStatementsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.S)));
+            this.getStatementsToolStripMenuItem.Size = new System.Drawing.Size(387, 24);
             this.getStatementsToolStripMenuItem.Text = "Get Statements";
             this.getStatementsToolStripMenuItem.Click += new System.EventHandler(this.getStatementsToolStripMenuItem_Click);
             // 
             // transactionInformationToolStripMenuItem
             // 
             this.transactionInformationToolStripMenuItem.Name = "transactionInformationToolStripMenuItem";
-            this.transactionInformationToolStripMenuItem.Size = new System.Drawing.Size(275, 24);
+            this.transactionInformationToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.T)));
+            this.transactionInformationToolStripMenuItem.Size = new System.Drawing.Size(387, 24);
             this.transactionInformationToolStripMenuItem.Text = "Transaction Information";
             this.transactionInformationToolStripMenuItem.Click += new System.EventHandler(this.transactionInformationToolStripMenuItem_Click);
             // 
@@ -167,45 +151,70 @@
             // infoAlertsToolStripMenuItem
             // 
             this.infoAlertsToolStripMenuItem.Name = "infoAlertsToolStripMenuItem";
-            this.infoAlertsToolStripMenuItem.Size = new System.Drawing.Size(234, 24);
+            this.infoAlertsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.infoAlertsToolStripMenuItem.Size = new System.Drawing.Size(346, 24);
             this.infoAlertsToolStripMenuItem.Text = "Info Alerts";
             this.infoAlertsToolStripMenuItem.Click += new System.EventHandler(this.infoAlertsToolStripMenuItem_Click);
             // 
             // newCardToolStripMenuItem
             // 
             this.newCardToolStripMenuItem.Name = "newCardToolStripMenuItem";
-            this.newCardToolStripMenuItem.Size = new System.Drawing.Size(234, 24);
+            this.newCardToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Alt) 
+            | System.Windows.Forms.Keys.N)));
+            this.newCardToolStripMenuItem.Size = new System.Drawing.Size(346, 24);
             this.newCardToolStripMenuItem.Text = "New Card";
             this.newCardToolStripMenuItem.Click += new System.EventHandler(this.newCardToolStripMenuItem_Click);
             // 
             // periodicStatementToolStripMenuItem
             // 
             this.periodicStatementToolStripMenuItem.Name = "periodicStatementToolStripMenuItem";
-            this.periodicStatementToolStripMenuItem.Size = new System.Drawing.Size(234, 24);
+            this.periodicStatementToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.P)));
+            this.periodicStatementToolStripMenuItem.Size = new System.Drawing.Size(346, 24);
             this.periodicStatementToolStripMenuItem.Text = "Periodic Statement";
             this.periodicStatementToolStripMenuItem.Click += new System.EventHandler(this.periodicStatementToolStripMenuItem_Click);
+            // 
+            // transactionToolStripMenuItem
+            // 
+            this.transactionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.depositToolStripMenuItem,
+            this.withdrawToolStripMenuItem});
+            this.transactionToolStripMenuItem.Name = "transactionToolStripMenuItem";
+            this.transactionToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
+            this.transactionToolStripMenuItem.Text = "Transaction";
+            // 
+            // depositToolStripMenuItem
+            // 
+            this.depositToolStripMenuItem.Name = "depositToolStripMenuItem";
+            this.depositToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.depositToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.depositToolStripMenuItem.Text = "Deposit";
+            this.depositToolStripMenuItem.Click += new System.EventHandler(this.depositToolStripMenuItem_Click);
+            // 
+            // withdrawToolStripMenuItem
+            // 
+            this.withdrawToolStripMenuItem.Name = "withdrawToolStripMenuItem";
+            this.withdrawToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.W)));
+            this.withdrawToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.withdrawToolStripMenuItem.Text = "Withdraw";
+            this.withdrawToolStripMenuItem.Click += new System.EventHandler(this.withdrawToolStripMenuItem_Click);
             // 
             // transfersToolStripMenuItem
             // 
             this.transfersToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.interAccountTransfersToolStripMenuItem,
             this.interactEMailTransferToolStripMenuItem,
             this.interAccountTransferToolStripMenuItem,
             this.westernUnionMoneyTransferToolStripMenuItem});
             this.transfersToolStripMenuItem.Name = "transfersToolStripMenuItem";
+            this.transfersToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.W)));
             this.transfersToolStripMenuItem.Size = new System.Drawing.Size(97, 24);
             this.transfersToolStripMenuItem.Text = "Transfers";
-            // 
-            // interAccountTransfersToolStripMenuItem
-            // 
-            this.interAccountTransfersToolStripMenuItem.Name = "interAccountTransfersToolStripMenuItem";
-            this.interAccountTransfersToolStripMenuItem.Size = new System.Drawing.Size(331, 24);
-            this.interAccountTransfersToolStripMenuItem.Text = "Inter Account Transfers";
-            this.interAccountTransfersToolStripMenuItem.Click += new System.EventHandler(this.interAccountTransfersToolStripMenuItem_Click);
             // 
             // interactEMailTransferToolStripMenuItem
             // 
             this.interactEMailTransferToolStripMenuItem.Name = "interactEMailTransferToolStripMenuItem";
+            this.interactEMailTransferToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.interactEMailTransferToolStripMenuItem.Size = new System.Drawing.Size(331, 24);
             this.interactEMailTransferToolStripMenuItem.Text = "Interac E-Mail Transfer";
             this.interactEMailTransferToolStripMenuItem.Click += new System.EventHandler(this.interactEMailTransferToolStripMenuItem_Click);
@@ -213,6 +222,7 @@
             // interAccountTransferToolStripMenuItem
             // 
             this.interAccountTransferToolStripMenuItem.Name = "interAccountTransferToolStripMenuItem";
+            this.interAccountTransferToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
             this.interAccountTransferToolStripMenuItem.Size = new System.Drawing.Size(331, 24);
             this.interAccountTransferToolStripMenuItem.Text = "Inter Bank Transfer";
             this.interAccountTransferToolStripMenuItem.Click += new System.EventHandler(this.interAccountTransferToolStripMenuItem_Click);
@@ -227,6 +237,7 @@
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.closeToolStripMenuItem.Text = "Close ";
             this.closeToolStripMenuItem.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
@@ -244,7 +255,7 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainBank";
-            this.Text = "MainBank";
+            this.Text = "Humber Bank";
             this.Load += new System.EventHandler(this.MainBank_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -269,7 +280,6 @@
         private System.Windows.Forms.ToolStripMenuItem getStatementsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem transfersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem interAccountTransfersToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem interAccountTransferToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem interactEMailTransferToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem westernUnionMoneyTransferToolStripMenuItem;

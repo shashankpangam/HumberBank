@@ -55,7 +55,7 @@ Message varchar(50),
 TNo number(10) not null,
 AccNo number(20) not null,
 constraint fk_TransInterac foreign key (TNo) references Transactions(TNo),
-constraint fk_Acc_Interac foreign key (AccNo) references Accounts(AccNo)
+constraint fk_Acc_Interac foreign key (AccNo) references Accounts (AccNo)
 );
 
 create table InterBankTransfer(

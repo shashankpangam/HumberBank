@@ -43,11 +43,13 @@
             // 
             // btnClose
             // 
+            this.btnClose.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnClose.Location = new System.Drawing.Point(309, 440);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(85, 25);
-            this.btnClose.TabIndex = 33;
-            this.btnClose.Text = "Close";
+            this.btnClose.TabIndex = 1;
+            this.btnClose.Text = "Clo&se";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -59,7 +61,7 @@
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.dgvFindTransaction);
             this.Name = "FindTransactionResult";
-            this.Text = "FindTransactionResult";
+            this.Text = "Find Transaction Result";
             this.Load += new System.EventHandler(this.FindTransactionResult_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFindTransaction)).EndInit();
             this.ResumeLayout(false);

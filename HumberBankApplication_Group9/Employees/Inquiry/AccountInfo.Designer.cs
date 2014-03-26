@@ -56,36 +56,36 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(404, 116);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(74, 16);
+            this.label7.Size = new System.Drawing.Size(80, 16);
             this.label7.TabIndex = 10;
-            this.label7.Text = "PinCode:";
+            this.label7.Text = "PinCode :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(367, 85);
+            this.label6.Location = new System.Drawing.Point(366, 87);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 16);
+            this.label6.Size = new System.Drawing.Size(118, 16);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Date of Birth:";
+            this.label6.Text = "Date of Birth :";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(80, 112);
+            this.label5.Location = new System.Drawing.Point(78, 116);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 16);
+            this.label5.Size = new System.Drawing.Size(127, 16);
             this.label5.TabIndex = 8;
-            this.label5.Text = "Mothers Name:";
+            this.label5.Text = "Mothers Name :";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(17, 85);
+            this.label4.Location = new System.Drawing.Point(15, 87);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(184, 16);
+            this.label4.Size = new System.Drawing.Size(190, 16);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Account Holders Name:\r\n";
+            this.label4.Text = "Account Holders Name :\r\n";
             // 
             // label3
             // 
@@ -99,14 +99,15 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 44);
+            this.label2.Location = new System.Drawing.Point(25, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 16);
+            this.label2.Size = new System.Drawing.Size(144, 16);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Account Number:";
+            this.label2.Text = "Account Number :";
             // 
             // btnClose
             // 
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.Location = new System.Drawing.Point(628, 428);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(85, 25);
@@ -166,9 +167,9 @@
             // 
             this.btnCheck.Location = new System.Drawing.Point(399, 41);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(140, 25);
+            this.btnCheck.Size = new System.Drawing.Size(130, 25);
             this.btnCheck.TabIndex = 3;
-            this.btnCheck.Text = "Check &Validity";
+            this.btnCheck.Text = "&Check Validity";
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
@@ -235,14 +236,16 @@
             this.btnVerified.Name = "btnVerified";
             this.btnVerified.Size = new System.Drawing.Size(111, 25);
             this.btnVerified.TabIndex = 12;
-            this.btnVerified.Text = "V&erified";
+            this.btnVerified.Text = "&Verified";
             this.btnVerified.UseVisualStyleBackColor = true;
             this.btnVerified.Click += new System.EventHandler(this.btnVerified_Click);
             // 
             // AccountInfo
             // 
+            this.AcceptButton = this.btnCheck;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(752, 496);
             this.Controls.Add(this.grpLogin);
             this.Name = "AccountInfo";

@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL" />
+    <Reference Include="Oracle.Web, Version=4.121.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -46,6 +49,7 @@
   <ItemGroup>
     <Compile Include="AccountHolder.cs" />
     <Compile Include="Card.cs" />
+    <Compile Include="DatabaseClass.cs" />
     <Compile Include="Employees\Inquiry\AccountInfo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,12 +121,6 @@
     </Compile>
     <Compile Include="Employees\Transaction\Withdraw.Designer.cs">
       <DependentUpon>Withdraw.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Employees\Transfer\InterAccountTransfer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Employees\Transfer\InterAccountTransfer.Designer.cs">
-      <DependentUpon>InterAccountTransfer.cs</DependentUpon>
     </Compile>
     <Compile Include="Employees\Transfer\InteracEMailTransfer.cs">
       <SubType>Form</SubType>
@@ -228,9 +226,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\Transaction\Withdraw.resx">
       <DependentUpon>Withdraw.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Employees\Transfer\InterAccountTransfer.resx">
-      <DependentUpon>InterAccountTransfer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employees\Transfer\InteracEMailTransfer.resx">
       <DependentUpon>InteracEMailTransfer.cs</DependentUpon>

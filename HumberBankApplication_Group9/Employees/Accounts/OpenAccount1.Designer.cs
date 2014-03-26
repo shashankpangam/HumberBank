@@ -64,7 +64,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Check &Validity";
+            this.button1.Text = "&Check Validity";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // btnNext
@@ -81,11 +81,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(84, 100);
+            this.label5.Location = new System.Drawing.Point(78, 100);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(212, 16);
+            this.label5.Size = new System.Drawing.Size(218, 16);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Generate Account Number:";
+            this.label5.Text = "Generate Account Number :";
             // 
             // btnAutoGenerate
             // 
@@ -93,7 +93,7 @@
             this.btnAutoGenerate.Name = "btnAutoGenerate";
             this.btnAutoGenerate.Size = new System.Drawing.Size(130, 25);
             this.btnAutoGenerate.TabIndex = 3;
-            this.btnAutoGenerate.Text = "&Auto-Generate";
+            this.btnAutoGenerate.Text = "Auto-&Generate";
             this.btnAutoGenerate.UseVisualStyleBackColor = true;
             this.btnAutoGenerate.Click += new System.EventHandler(this.btnAutoGenerate_Click);
             // 
@@ -123,7 +123,6 @@
             // 
             // OpenAccount1
             // 
-            this.AcceptButton = this.btnAutoGenerate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 481);

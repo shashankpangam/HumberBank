@@ -121,9 +121,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(75, 345);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 16);
+            this.label6.Size = new System.Drawing.Size(87, 16);
             this.label6.TabIndex = 16;
-            this.label6.Text = "Pin Code :";
+            this.label6.Text = "Zip Code :";
             // 
             // txtAddress
             // 
@@ -190,7 +190,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 160);
+            this.label2.Location = new System.Drawing.Point(88, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(73, 16);
             this.label2.TabIndex = 8;
@@ -238,7 +238,7 @@
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(310, 55);
+            this.lblPassword.Location = new System.Drawing.Point(307, 55);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(99, 16);
             this.lblPassword.TabIndex = 2;
@@ -246,7 +246,6 @@
             // 
             // OpenAccount2
             // 
-            this.AcceptButton = this.btnNext;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(763, 475);

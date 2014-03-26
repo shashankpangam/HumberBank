@@ -33,6 +33,8 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.txtNewBalances = new System.Windows.Forms.TextBox();
             this.grpLogin = new System.Windows.Forms.GroupBox();
+            this.txtTotalPay = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtTrasactionFee = new System.Windows.Forms.TextBox();
@@ -51,8 +53,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lblReference = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtTotalPay = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.grpLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -62,27 +62,28 @@
             this.btnPayTo.Location = new System.Drawing.Point(390, 383);
             this.btnPayTo.Name = "btnPayTo";
             this.btnPayTo.Size = new System.Drawing.Size(81, 25);
-            this.btnPayTo.TabIndex = 46;
-            this.btnPayTo.Text = "Pay to";
+            this.btnPayTo.TabIndex = 18;
+            this.btnPayTo.Text = "&Pay To";
             this.btnPayTo.UseVisualStyleBackColor = true;
             this.btnPayTo.Click += new System.EventHandler(this.btnPayTo_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(371, 433);
+            this.label3.Location = new System.Drawing.Point(368, 433);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 16);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "New Balance:";
+            this.label3.Size = new System.Drawing.Size(116, 16);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "New Balance :";
             // 
             // btnClose
             // 
+            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnClose.Location = new System.Drawing.Point(628, 428);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(85, 25);
-            this.btnClose.TabIndex = 32;
-            this.btnClose.Text = "Close";
+            this.btnClose.TabIndex = 22;
+            this.btnClose.Text = "&Close";
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
@@ -92,7 +93,7 @@
             this.txtNewBalances.Name = "txtNewBalances";
             this.txtNewBalances.ReadOnly = true;
             this.txtNewBalances.Size = new System.Drawing.Size(126, 23);
-            this.txtNewBalances.TabIndex = 31;
+            this.txtNewBalances.TabIndex = 21;
             // 
             // grpLogin
             // 
@@ -126,9 +127,26 @@
             this.grpLogin.Location = new System.Drawing.Point(16, 17);
             this.grpLogin.Name = "grpLogin";
             this.grpLogin.Size = new System.Drawing.Size(719, 459);
-            this.grpLogin.TabIndex = 27;
+            this.grpLogin.TabIndex = 0;
             this.grpLogin.TabStop = false;
             this.grpLogin.Text = "Western Union Money Transfer";
+            // 
+            // txtTotalPay
+            // 
+            this.txtTotalPay.Location = new System.Drawing.Point(407, 328);
+            this.txtTotalPay.Name = "txtTotalPay";
+            this.txtTotalPay.ReadOnly = true;
+            this.txtTotalPay.Size = new System.Drawing.Size(154, 23);
+            this.txtTotalPay.TabIndex = 17;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(277, 329);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(124, 16);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Total Payable :";
             // 
             // txtTotal
             // 
@@ -136,33 +154,33 @@
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(154, 23);
-            this.txtTotal.TabIndex = 72;
+            this.txtTotal.TabIndex = 15;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(264, 300);
+            this.label9.Location = new System.Drawing.Point(255, 300);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(140, 16);
-            this.label9.TabIndex = 71;
-            this.label9.Text = "Total Receivable:";
+            this.label9.Size = new System.Drawing.Size(146, 16);
+            this.label9.TabIndex = 14;
+            this.label9.Text = "Total Receivable :";
             // 
             // txtTrasactionFee
             // 
-            this.txtTrasactionFee.Location = new System.Drawing.Point(408, 270);
+            this.txtTrasactionFee.Location = new System.Drawing.Point(407, 270);
             this.txtTrasactionFee.Name = "txtTrasactionFee";
             this.txtTrasactionFee.ReadOnly = true;
             this.txtTrasactionFee.Size = new System.Drawing.Size(154, 23);
-            this.txtTrasactionFee.TabIndex = 70;
+            this.txtTrasactionFee.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(267, 273);
+            this.label7.Location = new System.Drawing.Point(258, 273);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 16);
-            this.label7.TabIndex = 69;
-            this.label7.Text = "Transaction Fee:";
+            this.label7.Size = new System.Drawing.Size(143, 16);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Transaction Fee :";
             // 
             // txtSendingAmount
             // 
@@ -171,16 +189,16 @@
             this.txtSendingAmount.ReadOnly = true;
             this.txtSendingAmount.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txtSendingAmount.Size = new System.Drawing.Size(154, 23);
-            this.txtSendingAmount.TabIndex = 68;
+            this.txtSendingAmount.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(267, 244);
+            this.label6.Location = new System.Drawing.Point(259, 244);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(136, 16);
-            this.label6.TabIndex = 67;
-            this.label6.Text = "Sending Amount:";
+            this.label6.Size = new System.Drawing.Size(142, 16);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Sending Amount :";
             // 
             // txtExchangeRates
             // 
@@ -188,24 +206,24 @@
             this.txtExchangeRates.Name = "txtExchangeRates";
             this.txtExchangeRates.ReadOnly = true;
             this.txtExchangeRates.Size = new System.Drawing.Size(244, 23);
-            this.txtExchangeRates.TabIndex = 66;
+            this.txtExchangeRates.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(267, 215);
+            this.label5.Location = new System.Drawing.Point(261, 215);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(134, 16);
-            this.label5.TabIndex = 65;
-            this.label5.Text = "Exchange Rates:";
+            this.label5.Size = new System.Drawing.Size(140, 16);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Exchange Rates :";
             // 
             // btnCalculateTotal
             // 
             this.btnCalculateTotal.Location = new System.Drawing.Point(333, 162);
             this.btnCalculateTotal.Name = "btnCalculateTotal";
             this.btnCalculateTotal.Size = new System.Drawing.Size(162, 25);
-            this.btnCalculateTotal.TabIndex = 64;
-            this.btnCalculateTotal.Text = "Calculate Total";
+            this.btnCalculateTotal.TabIndex = 7;
+            this.btnCalculateTotal.Text = "Calculate &Total";
             this.btnCalculateTotal.UseVisualStyleBackColor = true;
             this.btnCalculateTotal.Click += new System.EventHandler(this.btnCalculateTotal_Click);
             // 
@@ -214,7 +232,7 @@
             this.txtAmount.Location = new System.Drawing.Point(356, 123);
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(154, 23);
-            this.txtAmount.TabIndex = 63;
+            this.txtAmount.TabIndex = 6;
             // 
             // textBox2
             // 
@@ -222,17 +240,17 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(49, 23);
-            this.textBox2.TabIndex = 62;
+            this.textBox2.TabIndex = 5;
             this.textBox2.Text = "CAD$";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(225, 126);
+            this.label4.Location = new System.Drawing.Point(218, 126);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(71, 16);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "Amount:";
+            this.label4.Size = new System.Drawing.Size(77, 16);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Amount :";
             // 
             // txtPickupCurrency
             // 
@@ -240,16 +258,16 @@
             this.txtPickupCurrency.Name = "txtPickupCurrency";
             this.txtPickupCurrency.ReadOnly = true;
             this.txtPickupCurrency.Size = new System.Drawing.Size(154, 23);
-            this.txtPickupCurrency.TabIndex = 60;
+            this.txtPickupCurrency.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(160, 91);
+            this.label2.Location = new System.Drawing.Point(153, 91);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(136, 16);
-            this.label2.TabIndex = 59;
-            this.label2.Text = "Pickup Currency:";
+            this.label2.Size = new System.Drawing.Size(142, 16);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Pickup Currency :";
             // 
             // cmbCountry
             // 
@@ -270,17 +288,17 @@
             this.cmbCountry.Location = new System.Drawing.Point(301, 56);
             this.cmbCountry.Name = "cmbCountry";
             this.cmbCountry.Size = new System.Drawing.Size(213, 24);
-            this.cmbCountry.TabIndex = 58;
+            this.cmbCountry.TabIndex = 1;
             this.cmbCountry.SelectedIndexChanged += new System.EventHandler(this.cmbCountry_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(166, 59);
+            this.label1.Location = new System.Drawing.Point(160, 59);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(129, 16);
-            this.label1.TabIndex = 57;
-            this.label1.Text = "Paying Country:";
+            this.label1.Size = new System.Drawing.Size(135, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Paying Country :";
             // 
             // lblReference
             // 
@@ -288,8 +306,8 @@
             this.lblReference.Location = new System.Drawing.Point(20, 428);
             this.lblReference.Name = "lblReference";
             this.lblReference.Size = new System.Drawing.Size(217, 16);
-            this.lblReference.TabIndex = 54;
-            this.lblReference.Text = "Your transfer reference is: ";
+            this.lblReference.TabIndex = 19;
+            this.lblReference.Text = "Your transfer reference is :";
             // 
             // pictureBox1
             // 
@@ -301,27 +319,12 @@
             this.pictureBox1.TabIndex = 53;
             this.pictureBox1.TabStop = false;
             // 
-            // txtTotalPay
-            // 
-            this.txtTotalPay.Location = new System.Drawing.Point(407, 328);
-            this.txtTotalPay.Name = "txtTotalPay";
-            this.txtTotalPay.ReadOnly = true;
-            this.txtTotalPay.Size = new System.Drawing.Size(154, 23);
-            this.txtTotalPay.TabIndex = 74;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(285, 329);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 16);
-            this.label8.TabIndex = 73;
-            this.label8.Text = "Total Payable:";
-            // 
             // WesterUnionPay
             // 
+            this.AcceptButton = this.btnCalculateTotal;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(750, 493);
             this.Controls.Add(this.grpLogin);
             this.Name = "WesterUnionPay";
