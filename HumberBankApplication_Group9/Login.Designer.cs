@@ -52,7 +52,7 @@
             this.lblWelcome.Location = new System.Drawing.Point(380, 305);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(638, 16);
-            this.lblWelcome.TabIndex = 2;
+            this.lblWelcome.TabIndex = 0;
             this.lblWelcome.Text = "Welcome to Humber Bank of Canada, please enter yout credentials to continue...!!";
             // 
             // lblUName
@@ -60,18 +60,18 @@
             this.lblUName.AutoSize = true;
             this.lblUName.Location = new System.Drawing.Point(61, 40);
             this.lblUName.Name = "lblUName";
-            this.lblUName.Size = new System.Drawing.Size(101, 20);
-            this.lblUName.TabIndex = 3;
-            this.lblUName.Text = "UserName";
+            this.lblUName.Size = new System.Drawing.Size(116, 20);
+            this.lblUName.TabIndex = 0;
+            this.lblUName.Text = "UserName :";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.Location = new System.Drawing.Point(68, 73);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(94, 20);
-            this.lblPassword.TabIndex = 4;
-            this.lblPassword.Text = "Password";
+            this.lblPassword.Size = new System.Drawing.Size(109, 20);
+            this.lblPassword.TabIndex = 2;
+            this.lblPassword.Text = "Password :";
             // 
             // grpLogin
             // 
@@ -87,16 +87,17 @@
             this.grpLogin.Location = new System.Drawing.Point(383, 343);
             this.grpLogin.Name = "grpLogin";
             this.grpLogin.Size = new System.Drawing.Size(430, 167);
-            this.grpLogin.TabIndex = 5;
+            this.grpLogin.TabIndex = 1;
             this.grpLogin.TabStop = false;
             this.grpLogin.Text = "Login";
             // 
             // btnExit
             // 
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Location = new System.Drawing.Point(235, 115);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 33);
-            this.btnExit.TabIndex = 8;
+            this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Exit Application";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -107,14 +108,14 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(159, 27);
-            this.txtPassword.TabIndex = 7;
+            this.txtPassword.TabIndex = 3;
             // 
             // txtUName
             // 
             this.txtUName.Location = new System.Drawing.Point(191, 37);
             this.txtUName.Name = "txtUName";
             this.txtUName.Size = new System.Drawing.Size(159, 27);
-            this.txtUName.TabIndex = 6;
+            this.txtUName.TabIndex = 1;
             // 
             // btnLogin
             // 
@@ -122,7 +123,7 @@
             this.btnLogin.Location = new System.Drawing.Point(82, 115);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(128, 33);
-            this.btnLogin.TabIndex = 5;
+            this.btnLogin.TabIndex = 4;
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -160,9 +161,11 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.btnLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(1246, 490);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.grpLogin);

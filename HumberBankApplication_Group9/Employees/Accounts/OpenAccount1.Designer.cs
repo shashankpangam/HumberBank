@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.grpLogin = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.btnAutoGenerate = new System.Windows.Forms.Button();
             this.txtAcc2 = new System.Windows.Forms.TextBox();
             this.btnValid = new System.Windows.Forms.TextBox();
             this.txtAcc1 = new System.Windows.Forms.TextBox();
-            this.btnNext = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.grpLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,9 +54,29 @@
             this.grpLogin.Location = new System.Drawing.Point(28, 50);
             this.grpLogin.Name = "grpLogin";
             this.grpLogin.Size = new System.Drawing.Size(675, 370);
-            this.grpLogin.TabIndex = 15;
+            this.grpLogin.TabIndex = 0;
             this.grpLogin.TabStop = false;
             this.grpLogin.Text = "Step 1";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(208, 193);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Check &Validity";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnNext
+            // 
+            this.btnNext.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNext.Location = new System.Drawing.Point(605, 337);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(64, 27);
+            this.btnNext.TabIndex = 6;
+            this.btnNext.Text = "&Next";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // label5
             // 
@@ -64,7 +84,7 @@
             this.label5.Location = new System.Drawing.Point(84, 100);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(212, 16);
-            this.label5.TabIndex = 37;
+            this.label5.TabIndex = 0;
             this.label5.Text = "Generate Account Number:";
             // 
             // btnAutoGenerate
@@ -72,8 +92,8 @@
             this.btnAutoGenerate.Location = new System.Drawing.Point(265, 143);
             this.btnAutoGenerate.Name = "btnAutoGenerate";
             this.btnAutoGenerate.Size = new System.Drawing.Size(130, 25);
-            this.btnAutoGenerate.TabIndex = 21;
-            this.btnAutoGenerate.Text = "Auto-Generate";
+            this.btnAutoGenerate.TabIndex = 3;
+            this.btnAutoGenerate.Text = "&Auto-Generate";
             this.btnAutoGenerate.UseVisualStyleBackColor = true;
             this.btnAutoGenerate.Click += new System.EventHandler(this.btnAutoGenerate_Click);
             // 
@@ -82,7 +102,7 @@
             this.txtAcc2.Location = new System.Drawing.Point(372, 97);
             this.txtAcc2.Name = "txtAcc2";
             this.txtAcc2.Size = new System.Drawing.Size(126, 23);
-            this.txtAcc2.TabIndex = 20;
+            this.txtAcc2.TabIndex = 2;
             // 
             // btnValid
             // 
@@ -90,7 +110,7 @@
             this.btnValid.Name = "btnValid";
             this.btnValid.ReadOnly = true;
             this.btnValid.Size = new System.Drawing.Size(98, 23);
-            this.btnValid.TabIndex = 18;
+            this.btnValid.TabIndex = 5;
             // 
             // txtAcc1
             // 
@@ -98,38 +118,19 @@
             this.txtAcc1.Name = "txtAcc1";
             this.txtAcc1.ReadOnly = true;
             this.txtAcc1.Size = new System.Drawing.Size(65, 23);
-            this.txtAcc1.TabIndex = 15;
+            this.txtAcc1.TabIndex = 1;
             this.txtAcc1.Text = "101012";
-            // 
-            // btnNext
-            // 
-            this.btnNext.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnNext.Location = new System.Drawing.Point(605, 337);
-            this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(64, 27);
-            this.btnNext.TabIndex = 21;
-            this.btnNext.Text = "Next";
-            this.btnNext.UseVisualStyleBackColor = true;
-            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(208, 193);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 23);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Check Validity";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // OpenAccount1
             // 
+            this.AcceptButton = this.btnAutoGenerate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(764, 481);
             this.Controls.Add(this.grpLogin);
             this.Name = "OpenAccount1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OpenAccount";
+            this.Text = "Open Account";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.OpenAccount_Load);
             this.grpLogin.ResumeLayout(false);

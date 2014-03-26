@@ -100,11 +100,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(97, 55);
+            this.label1.Location = new System.Drawing.Point(120, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 20);
+            this.label1.Size = new System.Drawing.Size(75, 20);
             this.label1.TabIndex = 11;
-            this.label1.Text = "Name";
+            this.label1.Text = "Name :";
             // 
             // btnLogout
             // 
@@ -112,7 +112,7 @@
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(84, 33);
             this.btnLogout.TabIndex = 10;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.Text = "&Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -130,11 +130,11 @@
             // lblMemberType
             // 
             this.lblMemberType.AutoSize = true;
-            this.lblMemberType.Location = new System.Drawing.Point(65, 153);
+            this.lblMemberType.Location = new System.Drawing.Point(51, 157);
             this.lblMemberType.Name = "lblMemberType";
-            this.lblMemberType.Size = new System.Drawing.Size(129, 20);
+            this.lblMemberType.Size = new System.Drawing.Size(144, 20);
             this.lblMemberType.TabIndex = 8;
-            this.lblMemberType.Text = "Member Type";
+            this.lblMemberType.Text = "Member Type :";
             // 
             // txtPassword
             // 
@@ -157,7 +157,7 @@
             this.btnAddBranchManager.Name = "btnAddBranchManager";
             this.btnAddBranchManager.Size = new System.Drawing.Size(226, 33);
             this.btnAddBranchManager.TabIndex = 5;
-            this.btnAddBranchManager.Text = "Add Branch Manager";
+            this.btnAddBranchManager.Text = "Add &Branch Manager";
             this.btnAddBranchManager.UseVisualStyleBackColor = true;
             this.btnAddBranchManager.Click += new System.EventHandler(this.btnAddBranchManager_Click);
             // 
@@ -166,18 +166,18 @@
             this.lblUName.AutoSize = true;
             this.lblUName.Location = new System.Drawing.Point(79, 88);
             this.lblUName.Name = "lblUName";
-            this.lblUName.Size = new System.Drawing.Size(101, 20);
+            this.lblUName.Size = new System.Drawing.Size(116, 20);
             this.lblUName.TabIndex = 3;
-            this.lblUName.Text = "UserName";
+            this.lblUName.Text = "UserName :";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(81, 121);
+            this.lblPassword.Location = new System.Drawing.Point(86, 124);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(94, 20);
+            this.lblPassword.Size = new System.Drawing.Size(109, 20);
             this.lblPassword.TabIndex = 4;
-            this.lblPassword.Text = "Password";
+            this.lblPassword.Text = "Password :";
             // 
             // lblWelcome
             // 
@@ -204,9 +204,11 @@
             // 
             // Admin
             // 
+            this.AcceptButton = this.btnAddBranchManager;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
+            this.CancelButton = this.btnLogout;
             this.ClientSize = new System.Drawing.Size(1248, 529);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.lblWelcome);

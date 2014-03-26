@@ -66,7 +66,7 @@
             this.grpAddEmployee.Location = new System.Drawing.Point(481, 332);
             this.grpAddEmployee.Name = "grpAddEmployee";
             this.grpAddEmployee.Size = new System.Drawing.Size(449, 239);
-            this.grpAddEmployee.TabIndex = 11;
+            this.grpAddEmployee.TabIndex = 0;
             this.grpAddEmployee.TabStop = false;
             this.grpAddEmployee.Text = "Add an Employee";
             // 
@@ -75,24 +75,25 @@
             this.txtName.Location = new System.Drawing.Point(202, 45);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(159, 27);
-            this.txtName.TabIndex = 12;
+            this.txtName.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 48);
+            this.label1.Location = new System.Drawing.Point(113, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 20);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Name";
+            this.label1.Size = new System.Drawing.Size(75, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Name :";
             // 
             // btnLogout
             // 
+            this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnLogout.Location = new System.Drawing.Point(262, 188);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(81, 33);
-            this.btnLogout.TabIndex = 10;
-            this.btnLogout.Text = "Logout";
+            this.btnLogout.TabIndex = 9;
+            this.btnLogout.Text = "&Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -102,17 +103,17 @@
             this.txtEmployee.Name = "txtEmployee";
             this.txtEmployee.ReadOnly = true;
             this.txtEmployee.Size = new System.Drawing.Size(159, 27);
-            this.txtEmployee.TabIndex = 9;
+            this.txtEmployee.TabIndex = 7;
             this.txtEmployee.Text = "Employee";
             // 
             // lblMemberType
             // 
             this.lblMemberType.AutoSize = true;
-            this.lblMemberType.Location = new System.Drawing.Point(58, 146);
+            this.lblMemberType.Location = new System.Drawing.Point(44, 149);
             this.lblMemberType.Name = "lblMemberType";
-            this.lblMemberType.Size = new System.Drawing.Size(129, 20);
-            this.lblMemberType.TabIndex = 8;
-            this.lblMemberType.Text = "Member Type";
+            this.lblMemberType.Size = new System.Drawing.Size(144, 20);
+            this.lblMemberType.TabIndex = 6;
+            this.lblMemberType.Text = "Member Type :";
             // 
             // txtPassword
             // 
@@ -120,22 +121,22 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(159, 27);
-            this.txtPassword.TabIndex = 7;
+            this.txtPassword.TabIndex = 5;
             // 
             // txtUName
             // 
             this.txtUName.Location = new System.Drawing.Point(202, 78);
             this.txtUName.Name = "txtUName";
             this.txtUName.Size = new System.Drawing.Size(159, 27);
-            this.txtUName.TabIndex = 6;
+            this.txtUName.TabIndex = 3;
             // 
             // btnAddEmployee
             // 
-            this.btnAddEmployee.Location = new System.Drawing.Point(92, 188);
+            this.btnAddEmployee.Location = new System.Drawing.Point(76, 188);
             this.btnAddEmployee.Name = "btnAddEmployee";
             this.btnAddEmployee.Size = new System.Drawing.Size(164, 33);
-            this.btnAddEmployee.TabIndex = 5;
-            this.btnAddEmployee.Text = "Add Employee";
+            this.btnAddEmployee.TabIndex = 8;
+            this.btnAddEmployee.Text = "Add &Employee";
             this.btnAddEmployee.UseVisualStyleBackColor = true;
             this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
@@ -144,18 +145,18 @@
             this.lblUName.AutoSize = true;
             this.lblUName.Location = new System.Drawing.Point(72, 81);
             this.lblUName.Name = "lblUName";
-            this.lblUName.Size = new System.Drawing.Size(101, 20);
-            this.lblUName.TabIndex = 3;
-            this.lblUName.Text = "UserName";
+            this.lblUName.Size = new System.Drawing.Size(116, 20);
+            this.lblUName.TabIndex = 2;
+            this.lblUName.Text = "UserName :";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
-            this.lblPassword.Location = new System.Drawing.Point(74, 114);
+            this.lblPassword.Location = new System.Drawing.Point(79, 117);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(94, 20);
+            this.lblPassword.Size = new System.Drawing.Size(109, 20);
             this.lblPassword.TabIndex = 4;
-            this.lblPassword.Text = "Password";
+            this.lblPassword.Text = "Password :";
             // 
             // lblWarning
             // 
@@ -177,7 +178,7 @@
             this.lblBranchManager.Location = new System.Drawing.Point(478, 303);
             this.lblBranchManager.Name = "lblBranchManager";
             this.lblBranchManager.Size = new System.Drawing.Size(206, 16);
-            this.lblBranchManager.TabIndex = 12;
+            this.lblBranchManager.TabIndex = 1;
             this.lblBranchManager.Text = "Welcome, Branch Manager";
             // 
             // pctBranchManager
@@ -202,9 +203,11 @@
             // 
             // BranchManager
             // 
+            this.AcceptButton = this.btnAddEmployee;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CancelButton = this.btnLogout;
             this.ClientSize = new System.Drawing.Size(1248, 555);
             this.Controls.Add(this.grpAddEmployee);
             this.Controls.Add(this.lblWarning);
@@ -213,7 +216,7 @@
             this.Controls.Add(this.pctLogo);
             this.Name = "BranchManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BranchAdmin";
+            this.Text = "Branch Admin";
             this.Load += new System.EventHandler(this.BranchAdmin_Load);
             this.grpAddEmployee.ResumeLayout(false);
             this.grpAddEmployee.PerformLayout();
