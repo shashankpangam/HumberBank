@@ -1,0 +1,89 @@
+drop table accounts cascade constraints;
+drop table transactions cascade constraints;
+drop table cardrequest cascade constraints;
+drop table infoalerts cascade constraints;
+drop table interactransfer cascade constraints;
+drop table interbanktransfer cascade constraints;
+drop table westernunion cascade constraints;
+
+create table Accounts(
+AccNo number(20) primary key,
+AccHolderName varchar(30) not null,
+MName varchar(10) not null,
+DOB date check(DOB = trunc(DOB)) not null,
+Gender char(1) not null check (Gender in ('M','F')),
+Mobile number(10) not null,
+EMail varchar(50) not null,
+Address varchar(150) not null,
+Zip varchar(6) not null
+);
+
+create table Transactions(
+TNo number(10) primary key,
+TDate date not null,
+TType varchar(25) not null,
+TAmount number (5,2) not null,
+Remarks varchar (100),
+AccNo number(20) not null,
+constraint fk_AccTrans foreign key (AccNo) references Accounts(AccNo)
+);
+
+create table InfoAlerts(
+AlertID number(10) primary key,
+MobNo number(12),
+EMailID varchar(30),
+AccNo number(20) not null,
+constraint fk_AccInfo foreign key(AccNo) references Accounts(AccNo)
+);
+
+create table CardRequest(
+CID number(10) primary key,
+ReqDate date not null,
+CType varchar(20) not null,
+AccNo number(20) not null, 
+constraint fk_AccCard foreign key (AccNo) references Accounts(AccNo)
+);
+
+create table InteracTransfer(
+InteracID number(10) primary key,
+TransDate date not null,
+RecEMailID varchar(20) not null,
+SecQue varchar(20) not null,
+SecAns varchar(20) not null,
+Amount number(5,2) not null,
+Message varchar(50), 
+TNo number(10) not null,
+AccNo number(20) not null,
+constraint fk_TransInterac foreign key (TNo) references Transactions(TNo),
+constraint fk_Acc_Interac foreign key (AccNo) references Accounts(AccNo)
+);
+
+create table InterBankTransfer(
+InterBankID number(10) primary key,
+TransDate date not null,
+ToBank varchar(15),
+ToBankAcc number(20) not null,
+Amount number(5,2) not null,
+TNo number(10) not null,
+AccNo number(20) not null,
+constraint fk_TransInterBank foreign key (TNo) references Transactions(TNo),
+constraint fk_Acc_InterBank foreign key (AccNo) references Accounts(AccNo)
+);
+
+create table WesternUnion(
+WUID number(10) primary key,
+TransDate date not null,
+RecName varchar(15) not null,
+PickUp varchar(1) not null check (PickUp in ('T','F')),
+SecQue varchar(15) not null,
+SecAns varchar(10) not null,
+PayingCountry varchar(20) not null,
+PayingCurrency varchar(3) not null,
+ExchangeRates number(15,10) not null,
+TotalRec number(15,10) not null,
+Totalpay number(5,2) not null,
+TNo number(10) not null,
+AccNo number(20) not null,
+constraint fk_TransWestern foreign key (TNo) references Transactions(TNo),
+constraint fk_AccWestern foreign key (AccNo) references Accounts(AccNo)
+);
