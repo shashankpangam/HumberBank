@@ -5,6 +5,9 @@ drop table infoalerts cascade constraints;
 drop table interactransfer cascade constraints;
 drop table interbanktransfer cascade constraints;
 drop table westernunion cascade constraints;
+drop table periodicstatements cascade constraints;
+drop table login cascade constraints;
+drop table currency cascade constraints;
 
 create table Accounts(
 AccNo number(20) primary key,
@@ -87,3 +90,40 @@ AccNo number(20) not null,
 constraint fk_TransWestern foreign key (TNo) references Transactions(TNo),
 constraint fk_AccWestern foreign key (AccNo) references Accounts(AccNo)
 );
+
+create table periodicstatements(
+psid number(10) primary key,
+accno number(20) not null,
+Reqdate date not null,
+pstype varchar(20) not null,
+sendtype varchar(10) not null check (sendtype in ('Mobile','EmailID')),
+senddetails varchar(30) not null,
+constraint fk_Acc_Statement foreign key (accno) references Accounts(accno)
+);
+
+create table login(
+empid number(10) primary key,
+username varchar(20) not null,
+password varchar(20) not null,
+fname varchar(20) not null,
+lname varchar(20) not null,
+emp_role varchar(8) not null check (emp_role in ('ADMIN','MANAGER','EMPLOYEE')),
+mobile number(10) not null
+);
+
+create table currency(
+symbol varchar(10) primary key, 
+country varchar(30) not null,
+rate number(7,4) not null
+);
+
+INSERT INTO CURRENCY VALUES('USD','UNITED STATES OF AMERICA',0.9016);
+INSERT INTO CURRENCY VALUES('GBP','GREAT BRITAIN',0.5436);
+INSERT INTO CURRENCY VALUES('AUD','AUSTRALIA',0.9760);
+INSERT INTO CURRENCY VALUES('EUR','EURO UNION',0.6541);
+INSERT INTO CURRENCY VALUES('INR','INDIA',54.2550);
+INSERT INTO CURRENCY VALUES('PKR','PAKISTAN',88.3399);
+INSERT INTO CURRENCY VALUES('CNY','CHINA',5.602);
+INSERT INTO CURRENCY VALUES('JPY','JAPAN',91.8251);
+INSERT INTO CURRENCY VALUES('AED','UNITED ARAB EMIRATES',3.3113);
+INSERT INTO CURRENCY VALUES('RUB','RUSSIA',32.0347);
